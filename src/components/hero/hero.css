@@ -1,0 +1,25 @@
+.hero {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 81px;
+	padding: var(--fs-400) 0;
+	box-shadow: -10px -10px 20px 0px #ffffff inset,
+		10px 10px 20px 0px #aaaacc80 inset, 5px 5px 10px 0px #aaaacc40 inset,
+		-5px -5px 10px 0px #ffffff80 inset;
+}
+
+.hero div {
+	width: 95%;
+	height: 100%;
+	background: #f5f5fa;
+	border-radius: 20px;
+	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
+		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
+}
+
+.hero img {
+	object-fit: cover;
+	border-radius: 20px;
+}

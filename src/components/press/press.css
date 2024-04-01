@@ -1,0 +1,79 @@
+.press {
+	margin-top: 100px;
+	color: #313054;
+	margin-bottom: 98px;
+}
+
+.press .pressHeader {
+	font-size: var(--fs-800);
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.press .pressSubHeader {
+	font-size: var(--fs-400);
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.press .pressCardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 39px;
+}
+
+.press .pressCard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 10px 11px;
+	width: min(100%, 310px);
+	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
+		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
+}
+
+.press .pressCard span {
+	display: block;
+	height: 3px;
+	width: 100%;
+	box-shadow: 1px 1px 2px 0px #aeaec033 inset, -1px -1px 1px 0px #ffffffb2 inset;
+	background: #f5f5fa;
+	margin-top: 26px;
+	margin-bottom: 21px;
+}
+
+.press .pressCard button {
+	color: #b27508;
+	font-size: var(--fs-400);
+	font-weight: 400;
+	text-align: center;
+	align-self: center;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.press .pressCard button svg {
+	width: 24px;
+	height: 24px;
+}
+
+.press .pressCard p {
+	margin-top: 19px;
+	width: 100%;
+	font-size: var(--fs-400);
+	font-weight: 400;
+}
+
+.press .pressCard .pressImg {
+	width: 100%;
+	background: #f5f5fa;
+	box-shadow: -10px -10px 20px 0px #ffffff inset,
+		5px 5px 10px 0px #aaaacc40 inset, -5px -5px 10px 0px #ffffff80 inset;
+}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
 	DashSvg,
 	DownSvg,
@@ -5,16 +6,29 @@ import {
 	RegisterSvg,
 	WhatsappSvg,
 } from "../../assets/Svg";
+import img from "../../assets/logo.png";
 import "./header.css";
 
-const HomeHeader = () => {
+const HomeHeader = ({ setPage }) => {
+	const [showMenu, setShowMenu] = useState(false);
 	const bottomNavData = ["About Us", "Services", "Portfolio", "Developers"];
 
 	return (
 		<nav className="homeNav">
+			<button
+				onClick={() => setShowMenu((prev) => !prev)}
+				className="hamburgerMenu"
+			>
+				<div />
+				<div />
+				<div />
+			</button>
+
 			<div className="topNav">
 				<div className="navLeft">
-					<button className="logo">Logo</button>
+					<button className="logoImg" onClick={() => setPage("Home")}>
+						<img src={img} alt="logo" />
+					</button>
 
 					<button className="socials">
 						<span>
@@ -32,7 +46,7 @@ const HomeHeader = () => {
 				</div>
 
 				<div className="navRight">
-					<button className="socials">
+					<button className="socials" onClick={() => setPage("Dashboard")}>
 						<span>
 							<DashSvg />
 						</span>
@@ -48,7 +62,7 @@ const HomeHeader = () => {
 				</div>
 			</div>
 
-			<div className="bottomNav">
+			<div className={showMenu ? "bottomNav" : "bottomNav showMenu"}>
 				<button className="homeButton">Home</button>
 
 				<div className="bottomRightContainer">

@@ -1,0 +1,255 @@
+.dashboardContent {
+	display: grid;
+	grid-template-columns: 328px 1fr;
+	gap: 72px;
+	margin-top: 101px;
+}
+
+.dashboardContent .dashTabs svg {
+	width: 24px;
+	height: 24px;
+}
+
+.dashboardContent .dashSidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
+		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
+	padding: 49px 2px 49px 45px;
+	border-radius: 5px;
+	height: 800px;
+}
+
+.dashboardContent .dashTabContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+.dashboardContent .dashTabContainer .navContents {
+	margin-left: 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	color: #8d91a0;
+}
+
+.dashboardContent .navContents div div {
+	display: inline-block;
+	width: 46px;
+}
+
+.dashboardContent .navContents div div span {
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #8d91a0;
+	margin: auto;
+}
+
+.dashboardContent .navContents .active {
+	color: #313054;
+}
+
+.dashboardContent .navContents .active div span {
+	background: #313054;
+}
+
+.dashboardContent .dashTabs {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: #f5f5fa;
+	border-radius: 32px;
+	padding: 12px 13px;
+	box-shadow: -10px -10px 20px 0px #ffffff, 5px 5px 10px 0px #aaaacc40,
+		-5px -5px 10px 0px #ffffff80;
+}
+
+.dashboardContent .dashTabName {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.dashboardContent .cardContainer {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: var(--fs-300);
+	font-weight: 400;
+	color: #313054;
+	flex-wrap: wrap;
+}
+
+.dashboardContent .cardTitle {
+	font-size: var(--fs-600);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.dashboardContent .card svg {
+	width: 51.49px;
+	height: 50px;
+	margin-inline: auto;
+	margin-bottom: 45px;
+}
+
+.dashboardContent .card {
+	background: #f5f5fa;
+	max-width: 328px;
+}
+
+.dashboardContent .card.one {
+	padding: 36px 25px;
+	box-shadow: -10px -10px 20px 0px #ffffff inset,
+		10px 10px 20px 0px #aaaacc80 inset, 5px 5px 10px 0px #aaaacc40 inset,
+		-5px -5px 10px 0px #ffffff80 inset;
+}
+
+.dashboardContent .card.two {
+	padding: 90px 10px;
+	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
+		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
+}
+
+/* Company information */
+.companyInfo {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.companyInfoHeader {
+	font-size: var(--fs-600);
+	font-weight: 700;
+	text-align: center;
+	color: #344054;
+	margin-bottom: 46px;
+}
+
+.companyInfoCards {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	color: #313054;
+}
+
+.companyInfoLeft,
+.companyInfoRight {
+	width: min(100%, 500px);
+}
+
+.companyInfoLeft {
+	display: flex;
+	flex-direction: column;
+	gap: 42px;
+}
+
+.companyInfoRight {
+	padding: 19px 19px 100px 19px;
+	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
+		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
+}
+
+.companyInfoRightHeader {
+	font-size: var(--fs-500);
+	font-weight: 700;
+	color: #344054;
+	margin-bottom: 20px;
+}
+
+.companyInfoLeft button {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	height: 72px;
+	border-radius: 10px;
+	box-shadow: -10px -10px 20px 0px #ffffff, 5px 5px 10px 0px #aaaacc40,
+		-5px -5px 10px 0px #ffffff80;
+	font-size: var(--fs-300);
+	font-weight: 400;
+	color: #000000;
+	padding-inline: 16px;
+}
+
+.companyInfoLeft button svg {
+	width: 24px;
+	height: 24px;
+}
+
+.companyInfoLeft button div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+.companyInfoLeft button .dot {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #dfb141;
+}
+
+@media (max-width: 742px) {
+	.dashboardContent .dashSidebar .dashTabs {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.dashboardContent .dashSidebar .DownSvg {
+		display: none;
+	}
+
+	.dashboardContent .cardContainer {
+		align-items: flex-start;
+		justify-content: center;
+		gap: 20px;
+	}
+}
+
+@media (max-width: 950px) {
+	.dashSidebar {
+		position: relative;
+	}
+
+	.dashboardContent {
+		display: flex;
+		flex-direction: column;
+		gap: 130px;
+	}
+
+	.dashboardContent .dashSidebar {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		align-items: flex-start;
+		justify-content: flex-start;
+		box-shadow: none;
+		padding: 0;
+		height: max-content;
+	}
+
+	.dashboardContent .navContents {
+		position: absolute;
+		left: 0;
+		top: 120%;
+		width: max-content;
+	}
+
+	.dashboardContent .dashSidebar .dashTabName span {
+		display: none;
+	}
+}
