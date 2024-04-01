@@ -1,0 +1,116 @@
+.homeNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 31px;
+}
+
+/* Homepage top navigation */
+.topNav {
+	margin-top: 189px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 71px;
+	width: 100%;
+	padding-inline: 35px;
+	box-shadow: var(--header-box-shadow);
+	border-radius: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 30px;
+	color: #313054;
+	background: #f4f5fa;
+}
+
+.topNav svg {
+	width: 27.5px;
+	height: 27.5px;
+	border-radius: 5px 0px 0px 0px;
+	background: #eeeeee;
+	box-shadow: 1px 1px 1px 0px #aeaec026 inset;
+}
+
+.topNav .navLeft {
+	display: flex;
+	gap: 33px;
+}
+
+.topNav .navRight {
+	display: flex;
+	gap: 20px;
+	font-size: 20px;
+	line-height: 33px;
+}
+
+.topNav .logo {
+	width: 46px;
+	height: 49px;
+	padding: 10px 0px 0px 0px;
+}
+
+.topNav .socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.topNav .active {
+	box-shadow: var(--box-shadow);
+	background: #f0f0f3;
+	padding: 5px 10px;
+}
+
+/* Homepage bottom navigation */
+.bottomNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	gap: 39px;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24.01px;
+	color: #bbaacc;
+	background: #f4f5fa;
+	height: 73px;
+	padding-inline: 42px;
+	border-radius: 42.5px;
+	box-shadow: 10px 10px 20px 0px #00000014 inset,
+		-10px -10px 20px 0px #ffffff inset;
+}
+
+.bottomNav svg {
+	width: 24px;
+	height: 24px;
+	border-radius: 25px;
+	box-shadow: var(--box-shadow);
+}
+
+.bottomNav .homeButton {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 27.24px;
+	color: #313054;
+	padding: 12px 40px;
+	border-radius: 25px;
+	background: #f0f0f3;
+	box-shadow: var(--box-shadow);
+}
+
+.bottomNav .bottomRightContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	gap: 50px;
+}
+
+.bottomNav .bottomRightNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 23px;
+}
