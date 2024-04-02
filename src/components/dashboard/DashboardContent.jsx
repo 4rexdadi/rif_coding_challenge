@@ -38,6 +38,8 @@ const DashboardContent = () => {
 
 	return (
 		<div className="dashboardContent">
+			<div className="dashSidebar" />
+
 			<div className="dashSidebar">
 				{data.map((nav, i) => (
 					<div key={i} className="dashTabContainer">
