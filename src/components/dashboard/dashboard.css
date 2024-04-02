@@ -96,6 +96,7 @@
 	margin-bottom: 15px;
 }
 
+.dashboardContent .card img,
 .dashboardContent .card svg {
 	width: 51.49px;
 	height: 50px;

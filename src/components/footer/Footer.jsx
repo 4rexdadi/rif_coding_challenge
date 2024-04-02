@@ -1,4 +1,4 @@
-import footer from "../../assets/footer.png";
+import FooterSvg from "../../assets/FooterSvg";
 import "./footer.css";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
 			</p>
 
 			<div className="footerIMG">
-				<img src={footer} alt="footer" />
+				<FooterSvg />
 			</div>
 		</div>
 	);
