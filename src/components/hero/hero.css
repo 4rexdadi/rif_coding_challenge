@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 81px;
+	border-radius: 15px;
 	padding: var(--fs-400) 0;
 	box-shadow: -10px -10px 20px 0px #ffffff inset,
 		10px 10px 20px 0px #aaaacc80 inset, 5px 5px 10px 0px #aaaacc40 inset,
