@@ -107,7 +107,7 @@
 .dashboardContent .card {
 	background: #f5f5fa;
 	max-width: 328px;
-	border-radius: 20px;
+	border-radius: 25px;
 }
 
 .dashboardContent .card.one {
@@ -159,7 +159,7 @@
 
 .companyInfoRight {
 	padding: 19px 19px 100px 19px;
-	border-radius: 20px;
+	border-radius: 25px;
 	box-shadow: -10px -10px 20px 0px #ffffff, 10px 10px 20px 0px #aaaacc80,
 		5px 5px 10px 0px #aaaacc40, -5px -5px 10px 0px #ffffff80;
 }
